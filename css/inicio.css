@@ -671,20 +671,11 @@ model-viewer > #ar-prompt > img {
     margin-bottom: 20px;
     margin-left: 20px;
 }
-
-
-
-
-
-
-
-@media (min-width: 1000px){
-.cedula {
-    width: 100vh;
-
+@media (max-width:500px){
+.con1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 }
-
-
-	
