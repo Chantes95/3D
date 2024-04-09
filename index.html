@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="&lt;model-viewer&gt; template">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" href="css/styles3d.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/inicio.css">
+<title>Mi Sitio Web</title>
+
+<!-- Incluir la biblioteca Chart.js --> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<!-- Incluir el complemento chartjs-plugin-datalabels --> 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<style></style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script>
+</head>
+<body>
+<div class="menu-toggle">&#9776;</div>
+<div class="menu">
+  <ul class="menu-items">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="diseno.html">Diseño gráfico</a></li>
+    <li><a href="model3d.html">Modelado 3D</a></li>
+    <li><a href="mark.html">Marketing</a></li>
+  </ul>
+  <div class="boton"> <a href="https://www.cedulaprofesional.sep.gob.mx/cedula/presidencia/indexAvanzada.action" target="_blank">
+    <h3 class="cedula">Hola mundo</h3>
+    </a> </div>
+</div>
+
+<!-- Imagen principal -->
+<div class="con1">
+	<div class="conin">
+	</div>
+	<div class="conin2">
+		<model-viewer src="elemet/3D/cubo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          TIEMPO REAL
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>
+	</div>
+	</div>
+	
+<script src="js/script.js"></script> 
+<script src="js/script3d.js"></script> 
+<!-- Loads <model-viewer> for browsers: --> 
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</body>
+</html>
